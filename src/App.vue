@@ -1,5 +1,13 @@
 <template>
   <div id="app">
+    <h2>Normal</h2>
+
+    <div class="container normal">
+      <img v-preview:scope-a src="./images/01.jpg" alt="image 01" />
+      <img v-preview:scope-a src="./images/05.png" alt="image 05" />
+      <img v-preview src="./images/07.png" alt="image 07" />
+    </div>
+
     <h2>Lazy Load</h2>
 
     <div class="container lazy" v-lazy-container="{ selector: 'img' }">
