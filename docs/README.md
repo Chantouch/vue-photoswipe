@@ -15,7 +15,7 @@
 
 ![DEMO](https://repository-images.githubusercontent.com/194109246/dc703a00-9b42-11e9-920a-e84b3b3b7ac3)
 
-[Try it out](https://chantouch.github.io/vue-photoswipe/)
+[Try it out](https://chantouch.github.io/@chantouchsek/vue-photoswipe/)
 
 ## Requirements
 
