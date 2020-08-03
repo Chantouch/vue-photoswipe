@@ -3,7 +3,11 @@
     <h2>Lazy Load</h2>
 
     <div class="container lazy" v-lazy-container="{ selector: 'img' }">
-      <img v-preview="{ name: 'b' }" :data-src="imageContext('./01.jpg')" alt="image 01" />
+      <img v-preview="{ name: 'b', events: { closed: () => { console.log('hi')}} }"
+           :data-src="imageContext('./01.jpg')"
+           alt="image 01"
+           @close="() => { console.log('hi') }"
+      />
       <img v-preview="{ name: 'b' }" :data-src="imageContext('./02.jpg')" alt="image 02" />
       <img v-preview :data-src="imageContext('./03.jpg')" alt="image 03" />
       <img v-preview :data-src="imageContext('./04.png')" alt="image 04" />
@@ -18,6 +22,7 @@
 
 <script>
 import createPreviewDirective from '../lib/directive'
+import bus from '../lib/bus'
 
 const imageContext = require.context('./images/', false, /\.(png|jpg)$/)
 
@@ -32,7 +37,12 @@ export default {
       allowPanToNext: false // 禁止图片放大时滑动到上/下一页
     })
   },
-  methods: { imageContext }
+  methods: { imageContext },
+  mounted () {
+    bus.$on('close', () => {
+      console.log('close')
+    })
+  }
 }
 </script>
 

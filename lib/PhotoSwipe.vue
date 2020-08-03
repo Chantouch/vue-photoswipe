@@ -60,12 +60,13 @@
 
 <script>
 import { setOriginImageSize } from './utils'
+import events from './events'
+import bus from './bus'
 
 const DEFAULT_OPTIONS = {}
 
 export default {
   name: 'Previewer',
-
   methods: {
     show (PhotoSwipe, PhotoSwipeUI, index, items, opts) {
       if (!PhotoSwipe || !PhotoSwipeUI) {
@@ -75,6 +76,12 @@ export default {
       this.$previewer = new PhotoSwipe(this.$el, PhotoSwipeUI, items, options)
       this.$_addListeners()
       this.$previewer.init()
+      events.forEach(e => {
+        this.$previewer.listen(e, (...args) => {
+          args.unshift(this)
+          bus.$emit(e, [...args])
+        })
+      })
     },
 
     $_addListeners () {
@@ -99,3 +106,8 @@ export default {
   }
 }
 </script>
+
+<style>
+  @import "~photoswipe/dist/photoswipe.css";
+  @import "~photoswipe/dist/default-skin/default-skin.css";
+</style>
