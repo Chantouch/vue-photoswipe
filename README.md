@@ -4,12 +4,12 @@
 
 [![vue-js](https://img.shields.io/badge/vue.js-2.x-brightgreen.svg?maxAge=604800)](https://vuejs.org/)
 [![downloads](https://img.shields.io/npm/dt/@chantouchsek/vue-photoswipe.svg)](http://npm-stats.com/~packages/@chantouchsek/vue-photoswipe)
-[![GitHub stars](https://img.shields.io/github/stars/Chantouch/@chantouchsek/vue-photoswipe.svg)](https://github.com/Chantouch/@chantouchsek/vue-photoswipe/stargazers)
-[![devDependencies](https://img.shields.io/david/dev/Chantouch/@chantouchsek/vue-photoswipe.svg)](https://david-dm.org/Chantouch/@chantouchsek/vue-photoswipe?type=dev)
+[![GitHub stars](https://img.shields.io/github/stars/Chantouch/vue-photoswipe.svg)](https://github.com/Chantouch/vue-photoswipe/stargazers)
+[![devDependencies](https://img.shields.io/david/dev/Chantouch/vue-photoswipe.svg)](https://david-dm.org/Chantouch/vue-photoswipe?type=dev)
 [![npm-version](https://img.shields.io/npm/v/@chantouchsek/vue-photoswipe.svg?maxAge=3600)](https://www.npmjs.com/package/@chantouchsek/vue-photoswipe)
-[![Github tag](https://img.shields.io/github/tag/Chantouch/@chantouchsek/vue-photoswipe.svg?maxAge=3600)](https://github.com/Chantouch/@chantouchsek/vue-photoswipe/)
-[![Build Status](https://travis-ci.org/Chantouch/@chantouchsek/vue-photoswipe.svg?branch=master)](https://travis-ci.org/Chantouch/@chantouchsek/vue-photoswipe)
-[![GitHub license](https://img.shields.io/github/license/Chantouch/@chantouchsek/vue-photoswipe.svg)](https://github.com/Chantouch/@chantouchsek/vue-photoswipe/blob/master/LICENSE)
+[![Github tag](https://img.shields.io/github/tag/Chantouch/vue-photoswipe.svg?maxAge=3600)](https://github.com/Chantouch/vue-photoswipe/)
+[![Build Status](https://travis-ci.org/Chantouch/vue-photoswipe.svg?branch=master)](https://travis-ci.org/Chantouch/vue-photoswipe)
+[![GitHub license](https://img.shields.io/github/license/Chantouch/vue-photoswipe.svg)](https://github.com/Chantouch/vue-photoswipe/blob/master/LICENSE)
 
 ## Demo
 
