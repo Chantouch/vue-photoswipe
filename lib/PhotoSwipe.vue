@@ -77,6 +77,7 @@ export default {
       this.$previewer = new PhotoSwipe(this.$el, PhotoSwipeUI, items, options)
       this.$_addListeners()
       this.$previewer.init()
+      bus.$emit('photoswipe:open')
       events.forEach(e => {
         self.$previewer.listen(e, (...args) => {
           args.unshift(this)
