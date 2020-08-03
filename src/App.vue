@@ -39,8 +39,8 @@ export default {
   },
   methods: { imageContext },
   mounted () {
-    bus.$on('close', () => {
-      console.log('close')
+    bus.$on('photoswipe:close', () => {
+      console.log('closed')
     })
   }
 }

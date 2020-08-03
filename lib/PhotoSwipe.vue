@@ -72,14 +72,15 @@ export default {
       if (!PhotoSwipe || !PhotoSwipeUI) {
         throw new Error('Please install photoswipe and include.')
       }
+      const self = this
       const options = { index, ...DEFAULT_OPTIONS, ...opts }
       this.$previewer = new PhotoSwipe(this.$el, PhotoSwipeUI, items, options)
       this.$_addListeners()
       this.$previewer.init()
       events.forEach(e => {
-        this.$previewer.listen(e, (...args) => {
+        self.$previewer.listen(e, (...args) => {
           args.unshift(this)
-          bus.$emit(e, [...args])
+          bus.$emit(`photoswipe:${e}`, [...args])
         })
       })
     },

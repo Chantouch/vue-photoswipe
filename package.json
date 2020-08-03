@@ -1,6 +1,6 @@
 {
   "name": "@chantouchsek/vue-photoswipe",
-  "version": "0.0.1-beta-0",
+  "version": "0.0.1-beta-1",
   "description": "An image previewer for vue, powered by PhotoSwipe.",
   "main": "dist/index.umd.min.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "test": "echo test"
   },
   "files": [
-    "dist"
+    "dist",
+    "lib"
   ],
   "repository": {
     "type": "git",
