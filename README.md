@@ -193,7 +193,7 @@ export default {
 ## Development
 
 ```bash
-yarn serve
+yarn dev
 ```
 
 ## Build

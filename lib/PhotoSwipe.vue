@@ -87,7 +87,7 @@ export default {
     },
     $_addListeners () {
       this.$previewer.listen('close', this.$_destroy)
-      this.$previewer.listen('gettingData', (index, current) => void setOriginImageSize(current))
+      this.$previewer.listen('gettingData', (index, current) => setOriginImageSize(current))
     },
     $_destroy () {
       const hideAnimationDuration = this.$previewer.options.hideAnimationDuration + 50
